@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(60, 60, 60), #cecece);
+}
+
+.clock {
+
+  font-family: "Electrolize", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 55px;
+  display: flex;
+  gap: 20px;
+  color: white;
+  background-color: black;
+  width: 290px;
+  height: 240px;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #ccc;
+  border-radius: 30px;
+  position: absolute;
+
+
+}
+
+.element-relieve {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Sombra oscura */
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 30px 0px 0px;
+}
+
+/* Efecto de reflejo */
+.element-reflejo {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  /* Sombra blanca */
+}
+
+.band {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #E77B48;
+  height: 22%;
+  border-top: 7px solid #98512f;
+}
+
+.band .circle {
+  background-color: #98512f;
+  width: 10px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.time {
+  width: 250px;
+  overflow-x: hidden;
+  padding: 30px 10px 20px 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+time .content {
+  display: flex;
+  gap: 30px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#secondsContainer {
+  font-size: 120px;
+}
+
+.icons {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 30px;
+  align-items: center;
+  position: absolute;
+  z-index: 9;
+  left: 85%;
+}
+
+.icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.icons #running:hover {
+  color: #25D366;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+.icons #music:hover {
+  color: rgb(239, 120, 239);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.icons #pulse:hover {
+  color: red;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.icons .lights:hover {
+  color: yellow;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.lightUp,
+.lightUp a {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00ff, 0 0 70px #ff00ff
+}
+
+.normal {
+  color: white;
+}
+
+.nonVisible {
+  display: none;
+}
+
+.visible {
+  display: block
+}
+
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 220px;
+}
+
+@media screen and (max-width: 350px) {
+  .clock{
+    width: 230px;
+    height: 320px;
+  }
+
+  iframe {
+    width: 230px;
+    height: 300px;
+  }
+
+  .band{
+    height: 100%;
+    width:40%;
+    flex-direction: column;
+  }
+
+}
