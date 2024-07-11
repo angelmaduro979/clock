@@ -71,6 +71,7 @@ body {
   align-self: center;
   justify-self: center;
   height: fit-content;
+  max-width: 250px;
 }
 
 #contentId .content {
