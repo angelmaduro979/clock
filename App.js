@@ -4,6 +4,7 @@ const secondClock = document.getElementById('secondsContainer');
 const light=document.getElementById('light')
 const music=document.getElementById('music')
 
+// Functions
 
 
 function time() {
